@@ -1,6 +1,9 @@
-const express = require("express");
+const express = require('express');
 const app = express();
+const port = 3000;
 
-app.get('/', (req,res) => res.send('app funcionando troquei'));
+app.get('/', (req, res) => res.send('caralho de volume'));
 
-app.listen("3000");
+app.listen(port, () => {
+    console.log(`está servidor na porta ${port}`);
+})
